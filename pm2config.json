@@ -1,0 +1,11 @@
+
+{
+  "apps" : [{
+    "name": "bibserver",
+    "script": "npm",
+    "args":"start",
+    "out": "./out.log",
+    "watch": true,
+    "watch_delay": 1000
+  }]
+}
