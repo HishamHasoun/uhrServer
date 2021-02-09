@@ -1,6 +1,6 @@
 import express from "express"
 import { HADITH_PATH } from "../API/API_PATH"
-import { make_symlinks, set_nummer, set_type } from "../middleware"
+import { make_symlinks, set_bab, set_kitab, set_nummer, set_option, set_type } from "../middleware"
 import {  set_mp3_files, set_photos } from "../middleware/hadith"
 
 var router_hadith = express.Router()
@@ -16,6 +16,9 @@ const set_hadith_router = (app) => {
     app.use(HADITH_PATH,
         set_type,
         set_nummer,
+        set_option,
+        set_kitab,
+        set_bab,
         set_mp3_files,
         set_photos,
         make_symlinks, router_hadith)

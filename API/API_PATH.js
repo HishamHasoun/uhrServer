@@ -8,3 +8,5 @@ export const KURAN_PATH = PREFIX + "/kuran"
 
 export const HADITH_PATH = PREFIX + "/hadith"
 
+export const INFO_PATH = PREFIX + "/info"
+
